@@ -21,6 +21,7 @@
 		7830F8FC1780FF0100448054 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830F8DD1780FF0100448054 /* Foundation.framework */; };
 		7830F9041780FF0100448054 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7830F9021780FF0100448054 /* InfoPlist.strings */; };
 		7830F9071780FF0100448054 /* NSDate_ExtsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830F9061780FF0100448054 /* NSDate_ExtsTests.m */; };
+		7830F9161780FF8F00448054 /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830F9151780FF8F00448054 /* NSDate+Exts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		7830F9031780FF0100448054 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7830F9051780FF0100448054 /* NSDate_ExtsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDate_ExtsTests.h; sourceTree = "<group>"; };
 		7830F9061780FF0100448054 /* NSDate_ExtsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDate_ExtsTests.m; sourceTree = "<group>"; };
+		7830F9141780FF8F00448054 /* NSDate+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Exts.h"; sourceTree = "<group>"; };
+		7830F9151780FF8F00448054 /* NSDate+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Exts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		7830F8E11780FF0100448054 /* NSDate_Exts */ = {
 			isa = PBXGroup;
 			children = (
+				7830F9131780FF8F00448054 /* NSDate+Exts */,
 				7830F8EA1780FF0100448054 /* AppDelegate.h */,
 				7830F8EB1780FF0100448054 /* AppDelegate.m */,
 				7830F8E21780FF0100448054 /* Supporting Files */,
@@ -150,6 +154,15 @@
 				7830F9021780FF0100448054 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7830F9131780FF8F00448054 /* NSDate+Exts */ = {
+			isa = PBXGroup;
+			children = (
+				7830F9141780FF8F00448054 /* NSDate+Exts.h */,
+				7830F9151780FF8F00448054 /* NSDate+Exts.m */,
+			);
+			path = "NSDate+Exts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +276,7 @@
 			files = (
 				7830F8E81780FF0100448054 /* main.m in Sources */,
 				7830F8EC1780FF0100448054 /* AppDelegate.m in Sources */,
+				7830F9161780FF8F00448054 /* NSDate+Exts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

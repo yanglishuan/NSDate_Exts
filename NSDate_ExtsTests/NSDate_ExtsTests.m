@@ -7,26 +7,44 @@
 //
 
 #import "NSDate_ExtsTests.h"
+#import "NSDate+Exts.h"
 
 @implementation NSDate_ExtsTests
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testNSDate
 {
-    STFail(@"Unit tests are not implemented yet in NSDate_ExtsTests");
+    NSDate *today = [NSDate date];
+    
+    NSLog(@"today'year is %d", [today year]);
+    NSLog(@"today'month is %d", [today month]);
+    NSLog(@"today'day is %d", [today day]);
+    NSLog(@"today'hour is %d", [today hour]);
+    NSLog(@"today'minute is %d", [today minute]);
+    NSLog(@"today'second is %d", [today second]);
+}
+
+- (void)testNSDateDateByAdd
+{
+    NSDate *today = [NSDate date];
+
+    NSString *dateStr = [today string];
+    NSLog(@"today is %@", dateStr);
+    
+    NSDate *tomorrow = [today dateByAddingDays:1];
+    NSLog(@"tomorrow is %@", tomorrow);
+
+    NSDate *yestday = [today dateByAddingDays:-1];
+    NSLog(@"yestday is %@", yestday);
 }
 
 @end
