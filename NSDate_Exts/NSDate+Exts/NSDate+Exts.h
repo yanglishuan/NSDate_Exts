@@ -69,6 +69,9 @@ typedef NS_OPTIONS(NSUInteger, NSDateCompareIgnoreOptions) {
 + (id)dateWithString:(NSString *)string locale:(NSLocale *)locale;
 + (id)dateWithString:(NSString *)string format:(NSString *)format locale:(NSLocale *)locale;
 
+/// rfc1123格式为：Tue, 21 Dec 2013 05:54:26 GMT
++ (id)dateFromRFC1123:(NSString*)rfc1123;
+
 #pragma mark - ** 日期实例方法 **
 - (NSDate *)dateByAddingMinutes:(NSInteger)minutes;
 - (NSDate *)dateByAddingHours:(NSInteger)hours;
@@ -112,6 +115,9 @@ typedef NS_OPTIONS(NSUInteger, NSDateCompareIgnoreOptions) {
 - (NSString *)stringWithLocale:(NSLocale *)locale;
 - (NSString *)stringWithFormat:(NSString *)format;
 - (NSString *)stringWithFormat:(NSString *)format locale:(NSLocale *)locale;
+
+/// rfc1123格式为：Tue, 21 Dec 2013 05:54:26 GMT
+- (NSString *)rfc1123String;
 
 #pragma mark - ** 纪元、年、月、日、小时、分钟、秒、星期 **
 - (NSInteger)era;

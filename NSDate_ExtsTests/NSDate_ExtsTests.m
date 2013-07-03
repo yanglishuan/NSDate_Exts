@@ -148,5 +148,14 @@
     }
 }
 
+- (void)testRFC1123
+{
+    NSString *rfc1123Str = @"Tue, 21 Dec 2013 05:54:26 GMT";
+    NSDate *date = [NSDate dateFromRFC1123:rfc1123Str];
+    NSLog(@"rfc1123 date is:%@", date);
+    NSDate *today = [NSDate date];
+    NSString *resultRFC = [today rfc1123String];
+    NSLog(@"resultRFC is %@", resultRFC);
+}
 
 @end
